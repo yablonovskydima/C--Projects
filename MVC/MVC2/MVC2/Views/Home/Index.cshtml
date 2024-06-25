@@ -1,0 +1,94 @@
+﻿@using MVC2 
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    Person tom = new Person("Tom", 22);
+}
+<h3>Index Content</h3>
+<h2>Person Data</h2>
+<h3>Name: @tom.Name</h3>
+<h3>Age: @tom.Age</h3>
+
+
+<h2>User Name Form</h2>
+<form method="post">
+    <p>
+        <label>User Name: </label>
+        <input type="text" name="username"/><br/>
+    </p>
+    <p>
+        <label>Password: </label>
+        <input type="password" name="password"/><br/>
+    </p>
+    <p>
+        <label>Age: </label>
+        <input type="number" name="age"/><br/>
+    </p>
+    <p>
+        <label>Comment: </label>
+        <input type="text" name="comment"/><br/>
+    </p>
+    <p>
+        <label>Is VIP </label>
+        <input type="checkbox" name="isVip" value="false"/><br/>
+    </p>
+    <p>
+        <input name="member" type="radio" value="golf"/>
+        <span>Golf club</span><br/>
+        <input name="member" type="radio" value="football"/>
+        <span>Football club</span><br/>
+        <input name="member" type="radio" value="basketball"/>
+        <span>Basketball club</span><br/>
+
+    </p>
+    <p>
+        <input type="submit" value="Send"/>
+    </p>
+</form><br/>
+
+@section Footer{
+    Copyright, @DateTime.Now.Year, All rights reserved
+}
+
+@*<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        @*<h2>Hello World</h2>
+        <h3>Time: @DateTime.Now.ToShortTimeString()</h3>
+        <h4>@text</h4>
+        <div>
+            @if(hour < 12)
+            {
+                <h2>@morning</h2>
+            }
+            else if(hour > 17)
+            {
+                <h2>@evening</h2>
+            }
+            else
+            {
+                <h2>@hello</h2>
+            }
+    </div>*@
+    @*<ul>
+        @for(int i = 0; i < 6; i++)
+        {
+            <li>@arr[i]</li>
+        }
+    </ul>
+    
+    @model List<string>
+    <h2>Count: @Model.Count</h2>
+    <ul>
+        @foreach(string p in Model)
+        {
+            <li>@p</li>
+        }
+    </ul>
+    </body>
+</html>*@

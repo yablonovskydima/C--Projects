@@ -1,0 +1,55 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using WebAppDataBase.Models
+@model IndexViewModel
+
+@addTagHelper *, WebAppDataBase
+
+<style>
+    td, th, {padding: 0 13px 0 0;}
+
+    .glyphicon{
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        margin: 0 5px;
+
+    }
+
+    .glyphicon-chevron-down
+    {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .glyphicon-chevron-up
+    {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+</style>
+
+<h1>Users List </h1>
+<table>
+    <tr>
+        <th>
+            <sort-header action="Index" up="@Model.sortViewModel.Up" current="@Model.sortViewModel.Current" property="@Model.sortViewModel.NameSort">
+                Name
+            </sort-header>
+        </th>
+        <th>
+            <sort-header action="Index" up="@Model.sortViewModel.Up" current="@Model.sortViewModel.Current" property="@Model.sortViewModel.PriceSort">
+                Price
+            </sort-header>
+        </th>
+        <th>
+            <sort-header action="Index" up="@Model.sortViewModel.Up" current="@Model.sortViewModel.Current" property="@Model.sortViewModel.ProducerSort">
+                Producer
+            </sort-header>
+        </th>
+    </tr>
+    @foreach(Product u in Model.Products)
+    {
+        <tr><td>@u.Name</td><td>@u.Price</td><td>@u.Producer?.Name</td></tr>    
+    }
+</table>

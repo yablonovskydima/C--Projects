@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Online HTML Editor</title>
+    <style>
+
+        body, html {
+            margin: 0px;
+            height: 100%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        .main_top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit, 555px);
+        }
+
+        .botto_main {
+            display: grid;
+            grid-template-rows: 1fr;
+        }
+
+        .main1 {
+            margin-left: 20px;
+            height: 400px;
+            padding: 10px;
+        }
+
+        .main2 {
+            padding: 10px;
+            height: 400px;
+        }
+
+        .main3 {
+            height: 400px;
+            padding: 10px;
+        }
+
+        .agreement {
+            height: 150px;
+            padding: 30px;
+        }
+
+        .submit {
+            height: 200px;
+        }
+
+        .textfield {
+            border: 0px;
+            background-color: transparent;
+            font-size: 15px;
+        }
+
+        button {
+            height: 80px;
+            width: 250px;
+            border-radius: 5px;
+            background-color: #00C89A;
+            border: 1px solid;
+            color: white;
+            font-size: 20px;
+            margin-left: 80%;
+            margin-top: 70px;
+        }
+    </style>
+
+</head>
+
+<body id="bodyid">
+
+    <div class="main_top">
+        <div class="main1">
+            <h1>Registration Form</h1>
+            <form>
+                <br>
+                <img height="30px" width="30px" src="https://cdn.discordapp.com/attachments/733346502793101320/1073687523655688212/username.png">
+                <input class="textfield" type="text" style="width: 85%; margin-left: 25px;" value="Username">
+                <hr width="95%" style="margin-left: 10px;">
+                <br><br><br>
+                <img height="30px" width="30px" src="https://cdn.discordapp.com/attachments/733346502793101320/1073687523919933570/email.png">
+                <input class="textfield" type="text" style="width: 85%; margin-left: 25px;" value="Email Address">
+                <hr width="95%" style="margin-left: 10px;">
+                <br><br><br>
+                <img height="30px" width="30px" src="https://cdn.discordapp.com/attachments/733346502793101320/1073687523466948688/pswd.png">
+                <input class="textfield" type="text" style="width: 35%; margin-left: 20px;" value="Password">
+                <input class="textfield" type="text" style="width: 35%; margin-left: 75px;" value="Confirm Password">
+                <hr width="95%" style="margin-left: 10px;">
+            </form>
+        </div>
+        <div class="main2">
+            <h1>Personal details</h1>
+            <form style="margin-top: 22px;">
+                <br>
+                <input class="textfield" type="text" style="width: 95%" value="First Name">
+                <hr width="95%">
+                <br><br><br>
+                <input class="textfield" type="text" style="width: 95%" value="Last Name">
+                <hr width="95%">
+            </form>
+        </div>
+        <div class="main3">
+            <form style="margin-top: 80px; margin-left: 20px; width: 100%;">
+                <br>
+                <input class="textfield" type="text" style="width: 90%" value="Gender">
+                <hr width="95%" style="margin-left: -5px;">
+                <br><br><br>
+                <input class="textfield" type="date" style="width: 90%">
+                <hr width="95%" style="margin-left: -5px;">
+            </form>
+        </div>
+    </div>
+    <div class="botto_main">
+        <div class="agreement">
+            <div>
+                <form>
+                    <input type="checkbox" style="height: 20px; width: 20px;">
+                    <label>I want to receive news and special offers</label>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="checkbox" style="height: 20px; width: 20px;">
+                    <label>I agree with the Terms and Conditions</label>
+                </form>
+            </div>
+        </div>
+        <div class="submit">
+            <div>
+                <hr>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

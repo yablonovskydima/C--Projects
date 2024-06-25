@@ -1,0 +1,19 @@
+﻿@model IEnumerable<dz_DataBase.Models.Product>
+
+<h1>List of Products</h1>
+
+<table class="table" style="width: 500px; height: 300px">
+    <tr><th style="background-color: grey">Name</th><th style="background-color: grey">Price</th><th style="background-color: grey">Description</th></tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.Description</td>
+        </tr>        
+    }
+</table>
+<br/>
+<br/>
+
+<h3><a href="/Home/Index">Back</a></h3>

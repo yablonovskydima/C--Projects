@@ -1,0 +1,35 @@
+﻿<a asp-controller="Home" asp-action="Contacts">Contacts</a>
+<a asp-controller="Home" asp-action="Create">Create</a>
+
+@*@model WebApplication8.Models.DayTimeViewModel
+<form method="post">
+    <div>
+        <div>
+            <label asp-for="Period">Period of dat</label>
+            <select asp-for="Period" asp-items="Html.GetEnumSelectList<DayTime>()"></select>
+        </div>
+        <div>
+            <input type="submit" value="Save"></input>
+        </div>
+    </div>
+</form>*@
+
+<form method='post'>
+                                <p>
+                                    <label> Email </label><br/>
+                                    <input type = 'email'/>
+                                </p>
+                                <p>
+                                    <label> Password </label><br/>
+                                    <input type = 'password'/>
+                                </p>
+                                <p>
+                                    <input type = 'submit'/>
+                                </p>
+                            </form>
+
+<h4>Date and time</h4>
+<date/>
+<timer color="white" year-included="true" size-in-px="40"/>
+<summary>info</summary>
+

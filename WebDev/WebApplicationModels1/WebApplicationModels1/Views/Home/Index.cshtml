@@ -1,0 +1,47 @@
+﻿@using WebApplicationModels1.ViewModels
+@using WebApplicationModels1.Models
+@model IndexViewModel
+
+<style>
+    td{padding: 5px;}
+    tr:nth-child(even){background: #CCC}
+    tr:nth-child(odd) {background: #FFF}
+</style>
+
+@*<form>
+    <label>Choose your company</label>
+    <select name="companyId">
+        @foreach(CompanyModel company in Model.Companies)
+        {
+            <option value="@company.Id">@company.Name</option>            
+        }
+    </select>
+    <input type="submit"/>
+</form>
+<br/>
+<table>
+    <tr><td>Name</td><td>Company</td><td>Age</td></tr>
+    @foreach(Person p in Model.People)
+    {
+        <tr><td>@p.Name</td><td>@p.Company.Name</td><td>@p.Age</td></tr>
+    }
+</table>*@
+
+<form>
+    <label>Choose a country of product</label>
+    <select name="countryId">
+        @foreach(CountryModel country in Model.Countries)
+        {
+            <option value="@country.Id">@country.Name</option>            
+        }
+    </select>
+    <input type="submit"/>
+</form>
+<br/>
+<table>
+    <tr><td>Name</td><td>Country</td></tr>
+    @foreach(Product p in Model.Products)
+    {
+         <tr><td>@p.Id</td><td>@p.Name</td><td>@p.Country.Name</td></tr>
+    }
+</table>

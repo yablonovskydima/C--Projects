@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConsoleApp1</name>
+    </assembly>
+    <members>
+        <member name="T:ConsoleApp1.Calc">
+            <summary>
+            Class <c>Calc</c> calculates price of all products and price of all rides
+            </summary>
+        </member>
+        <member name="M:ConsoleApp1.Calc.PriceOfProducts(System.Int32[])">
+            <summary>
+            Summary of prices of products
+            </summary>
+            <param name="prices">
+            Indicates prices
+            Type is <see cref="!:int[]"/>
+            </param>
+            <returns>Returns the sum</returns>
+        </member>
+        <member name="M:ConsoleApp1.Calc.PriceOfRides(System.Int32,System.Int32)">
+            <summary>
+            Sumarry of price of all rides
+            </summary>
+            <param name="price">
+            Indicates price
+            Type is <see cref="T:System.Int32"/>
+            </param>
+            <param name="quantity">
+            Indicates the number of rides
+            Type is <see cref="T:System.Int32"/>
+            </param>
+            <returns>Returns the price of all rides</returns>
+            <exception cref="T:System.ArgumentException">
+            if <paramref name="price"/> is negative
+            if <paramref name="quantity"/> is negative
+            </exception>
+        </member>
+        <member name="T:ConsoleApp1.CelciusToKelvin">
+            <summary>
+            Using <c>CelciusToKelvin</c> class you can convert temperature from celsius to kelvin and vise versa
+            </summary>
+        </member>
+        <member name="M:ConsoleApp1.CelciusToKelvin.CelToKel(System.Int32)">
+            <summary>
+            Converting Celsius to Kelvin
+            </summary>
+            <param name="celc">
+            Indicates temp in Celsius
+            Type is <see cref="T:System.Int32"/>
+            </param>
+            <returns>Returns temp in Kelvin</returns>
+        </member>
+        <member name="M:ConsoleApp1.CelciusToKelvin.KelToCel(System.Int32)">
+            <summary>
+            Converting Kelvin to Celsius
+            </summary>
+            <param name="kel">
+            Indicates temp in Celvin
+            Type is <see cref="T:System.Int32"/>
+            </param>
+            <returns>Returns temp in Celsius</returns>
+        </member>
+    </members>
+</doc>
